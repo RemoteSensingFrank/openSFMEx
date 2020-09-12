@@ -146,7 +146,7 @@ def reconstruction_from_json(obj):
         shot = shot_from_json(key, value, reconstruction.cameras)
         reconstruction.add_shot(shot)
 
-    reconstruction.add_reference_lla(obj['reference_lla'])
+    #reconstruction.add_reference_lla(obj['reference_lla'])
 
     # Extract points
     if 'points' in obj:

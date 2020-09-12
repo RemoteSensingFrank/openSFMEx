@@ -174,6 +174,9 @@ def load_config(filepath):
     """Load config from a config.yaml filepath"""
     config = default_config()
 
+    """
+        首先加载默认的配置文件，判断是否有用户配置，如果有则修改默认配置
+    """
     if os.path.isfile(filepath):
         with open(filepath) as fin:
             new_config = yaml.safe_load(fin)

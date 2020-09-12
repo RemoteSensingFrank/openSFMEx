@@ -787,7 +787,7 @@ class UndistortedDataSet(object):
     def load_undistorted_reconstruction(self):
         return self.base.load_reconstruction(
             filename=os.path.join(self.subfolder, 'reconstruction.json'))
-
+            
     def save_undistorted_reconstruction(self, reconstruction):
         io.mkdir_p(self.data_path)
         return self.base.save_reconstruction(
